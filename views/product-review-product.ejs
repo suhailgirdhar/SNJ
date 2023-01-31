@@ -1,0 +1,62 @@
+<%- include("header") %>
+
+<div class="main">
+  <img class="section1" width="40%" src="/IMAGES/<%=orderProduct%>.jpg">
+  <div class="section2">
+    <h4><%= orderProduct %></h4>
+
+    <div class="slideDown1">
+      <h6><%= productSize %></h6>
+      <h6>INR <%= productPrice %>/- per piece</h6>
+    </div>
+
+    <div class="slideDown2">
+      <hr>
+      <p>Package Size</p>
+      <form id="packSizeForm" class="packSize" action="/product-review" method="post" style="margin-bottom: 40px">
+        <button type="submit" class="pack" name="pack" value="pack1">
+          <p>75 ml</p>
+          <p>INR 100/-</p>
+        </button>
+        <button type="submit" class="pack" name="pack" value="pack2">
+          <p>150 ml</p>
+          <p>INR 170/-</p>
+        </button>
+        <button type="submit" class="pack" name="pack" value="pack3">
+          <p>300 ml</p>
+          <p>INR 250/-</p>
+        </button>
+      </form>
+
+      <div style="margin-bottom: 30px">
+        <h6>Product Description:</h6>
+        <p><%= productDescription %></p>
+      </div>
+
+      <form id="addressForm" action="/product-review/product" method="post">
+        <label for="quantity">Quantity: </label>
+        <input class="quantity" type="number" name="quantity">
+        <a href="#address">
+          <button type="button" class="btn btn-basic grey">
+            Add a delivery address
+          </button>
+        </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="main address" id="address">
+  <h4>Delivery Details:</h4>
+  <input type="text" name="name" maxlength="100" placeholder="Name">
+  <input type="text" name="addressLine1" maxlength="100" placeholder="Flat/Building No.">
+  <input type="text" name="addressLine2" maxlength="100" placeholder="City/State">
+  <input type="number" name="addressLine3" maxlength="10" placeholder="Pincode">
+  <button class="btn btn-basic grey" type="submit">Proceed to Buy</button>
+</div>
+</form>
+
+
+
+
+<%- include("footer") %>

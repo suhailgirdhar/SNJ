@@ -1,0 +1,34 @@
+<%- include("header") %>
+
+<form action="/signup" method="post">
+
+    <div class="main-section">
+
+        <div class="login local-login">
+            <div class="input-field">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-control" type="text" name="username">
+            </div>
+            <div class="input-field">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="text" name="password">
+            </div>
+                <button class="btn btn-basic grey" type="submit" name="signup">Sign up</button>
+        </div>
+
+        <div class="login ext-login">
+
+            <a href="www.google.com" class="btn-lg btn-block btn-social btn-google btn">
+                <span class="fa fa-google"></span> Sign up with Google
+            </a>
+            <a href="www.facebook.com" class="btn btn-lg btn-block btn-social btn-facebook">
+                <span class="fa fa-facebook"></span> Sign up with facebook
+            </a>
+
+        </div>
+
+    </div>
+</form>
+
+
+<%- include("footer") %>

@@ -1,0 +1,24 @@
+<%- include("header") %>
+
+<form action="" method="post">
+  <div class="padded order">
+    <div>
+      <h3 style="margin-bottom: 60px">Order Confirmation!</h3>
+      <h4>Dear <%= orderBy %>, Please review your order below.</h4>
+      <div class="grid confirmation-grid">
+        <h5>Item: </h5>
+        <h5><%= orderProduct %></h5>
+        <h5>Quantity: </h5>
+        <h5><%= quantity %></h5>
+        <h5>Total Amount: </h5>
+        <h5>INR <%= totalAmount %>/-</h5>
+      </div>
+      <h4 style="margin: 60px auto 30px">Deliver to:</h4>
+      <p style="margin: 0"><%= name %></p>
+      <p style="margin: 0"><%= address %></p>
+    </div>
+    <button class="btn btn-basic grey" type="submit" name="button">Proceed to payment</button>
+  </div>
+</form>
+
+<%- include("footer") %>

@@ -1,0 +1,28 @@
+<%- include("header") %>
+
+
+<div class="main">
+  <img class="section1" width="40%" src="/IMAGES/<%=orderProduct%>.jpg">
+  <div class="section2">
+    <h4><%= orderProduct %></h4>
+    <hr>
+    <p>Select a Package Size:</p>
+    <form class="packSize" action="/product-review" method="post" style="margin-bottom: 100px">
+      <button type="submit" class="pack" name="pack" value="pack1">
+        <p>75 ml</p>
+        <p>INR 100/-</p>
+      </button>
+      <button type="submit" class="pack" name="pack" value="pack2">
+        <p>150 ml</p>
+        <p>INR 170/-</p>
+      </button>
+      <button type="submit" class="pack" name="pack" value="pack3">
+        <p>300 ml</p>
+        <p>INR 250/-</p>
+      </button>
+    </form>
+  </div>
+</div>
+
+
+<%- include("footer") %>

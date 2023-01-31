@@ -1,0 +1,32 @@
+<%- include("header") %>
+
+
+<form action="/login" method="post">
+
+    <div class="main-section">
+
+        <div class="login local-login">
+            <div class="input-field">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-control" type="text" name="username">
+            </div>
+            <div class="input-field">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="text" name="password">
+            </div>
+            <button class="btn btn-basic grey" type="submit" name="Log in">Log in</button>
+        </div>
+
+        <div class="login ext-login">
+
+            <a href="www.google.com" class="btn-lg btn-block btn-social btn-google btn">
+                <span class="fa-brands fa-google icon"></span> Sign in with Google
+            </a>
+            <a href="www.facebook.com" class="btn btn-lg btn-block btn-social btn-facebook">
+                <span class="fa fa-facebook"></span> Sign in with facebook
+            </a>
+
+        </div>
+
+    </div>
+</form>

@@ -1,0 +1,452 @@
+body {
+  background-color: #191919;
+  text-align: center;
+  color: grey;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+ul {
+  padding: 0;
+  text-align: left;
+}
+
+hr {
+  border-width: medium;
+}
+
+a {
+  text-decoration: none;
+}
+
+input{
+  color: grey;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 35px;
+}
+
+.padded {
+  padding: 10%;
+}
+
+.paddedTopBtm {
+  padding: 10% 0;
+}
+
+.paddedLeftRight {
+  padding: 0 10%;
+}
+
+.row {
+  margin: auto 0;
+}
+
+.centered {
+  text-align: center;
+  margin: auto;
+}
+
+.grey {
+  color: grey;
+  text-decoration: none;
+}
+
+.icon {
+  margin-right: 5%;
+}
+
+.form-control {
+  background-color: transparent;
+  border-style: none;
+}
+
+/* ---------Navbar------- */
+
+.navbar {
+  background-color: #191919;
+}
+.nav-item {
+  padding: 15px;
+  text-align: center;
+}
+
+.brand-name {
+  font-family: 'The Nautigal', cursive;
+  font-size: 3rem;
+}
+
+/* -------TagLine Section--------- */
+.taglineSection {
+  padding: 19% 10%;
+}
+
+.tagline {
+  font-size: 4rem;
+  font-family: serif;
+  text-align: left;
+  margin: 3% 0;
+}
+
+.homeImage {
+  animation: fadein 2.5s forwards;
+}
+
+@keyframes fadein {
+  0% {
+    transform: rotateY(10deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateY(30deg);
+    opacity: 1;
+  }
+}
+
+.tagline1 {
+  opacity: 0;
+  animation: slide1 0.8s forwards;
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tagline2 {
+  opacity: 0;
+  animation: slide2 0.8s forwards 0.5s;
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tagline3 {
+  opacity: 0;
+  animation: slide3 0.8s forwards 1s;
+}
+
+@keyframes slide3 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ------------Products Section--------- */
+.productsSection {
+  padding: 8% 10%;
+}
+
+.spaced-p {
+  letter-spacing: 3.5px;
+}
+
+.card {
+  color: white;
+  padding: 0;
+  background-color: #7F8487;
+  width: 19rem;
+  margin: 3% auto;
+  border: none;
+}
+
+.zoomChild {
+  transition: 0.3s;
+}
+
+.zoomParent:hover .zoomChild {
+  transform: scale(1.1);
+}
+
+.btn-basic {
+  color: grey;
+  background-color: #191919;
+  width: 100%;
+}
+
+.refillSection {
+  padding: 3% 10%;
+}
+
+/* ----------Consultancy Section--------- */
+.consultRow {
+  text-align: left;
+  width: 70%;
+  margin: 5% auto;
+}
+
+.consultRowText {
+  padding-top: 30px;
+}
+
+.consultancyImage1 {
+  width: 20%;
+  border-radius: 100%;
+  float: left;
+  margin-right: 50px;
+}
+
+.consultancyImage2 {
+  width: 20%;
+  border-radius: 100%;
+  float: right;
+  margin-left: 50px;
+}
+
+/* ----contact section ------ */
+.contactSection {
+  padding: 5% 10% 0;
+  background-image: linear-gradient(180deg, #191919, #8E05C2);
+}
+
+.subscribeBtn {
+  background-color: grey;
+  border-radius: 100px;
+  border-style: none;
+}
+
+.subscribeInput {
+  border-radius: 100px;
+  background-color: white;
+  border-style: none;
+}
+
+.listHeading {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.listItem {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.grey:hover {
+  color: #B2B2B2;
+}
+
+.copyright {
+  margin-bottom: 0;
+}
+
+/* --------product-review-product page---------- */
+.main {
+  margin: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.main .section2 {
+  width: 40%;
+  text-align: left;
+}
+
+.section2 .packSize {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.pack {
+  background-color: transparent;
+  border-style: solid;
+  text-align: center;
+  width: 100px;
+  color: grey;
+}
+
+.pack:hover {
+  color: white;
+  border-color: white;
+}
+
+.pack p {
+  margin: 0;
+}
+
+.slideDown1 {
+  animation: slideDown1 0.7s forwards;
+  opacity: 0;
+}
+
+@keyframes slideDown1 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideDown2 {
+  animation: slideDown2 0.7s forwards;
+  opacity: 0;
+}
+
+@keyframes slideDown2 {
+  0% {
+    transform: translateY(-30%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.quantity {
+  color: grey;
+  margin: 0 0 30px 30px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+button.grey {
+  color: white;
+  border: white solid;
+}
+
+.main.address {
+padding: 200px 0 0 50px;
+}
+
+.address input {
+  color: grey;
+  display: block;
+  margin: 20px 0;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 35px;
+  width: 450px;
+}
+
+.address button {
+  width: 450px;
+}
+
+
+/* --------ORDER CONFIRMATION PAGE ------*/
+
+.order div{
+  text-align: left;
+  margin-left: 0;
+}
+
+.order button {
+  width: 300px;
+  border-color: grey;
+  border-style: solid;
+}
+
+.address {
+  display: block;
+  text-align: left;
+}
+
+.confirmation-grid {
+  padding: 40px 0;
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 200px 600px;
+
+}
+
+/* ------------- LOG IN PAGE --------------- */
+
+.main-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin: 10%;
+  padding: 0;
+}
+
+.login{
+  text-align: left;
+  padding: 20%;
+}
+
+.ext-login{
+  font-size: x-large;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 30px;
+}
+
+.input-fields{
+  margin: 5%;
+}
+
+.input-field{
+  margin-bottom: 60px;
+}
+
+.input-field .form-control {
+  border-style: solid;
+}
+
+/* -------------- PROFILE PAGE -------------*/
+
+.profile-section{
+  display: grid;
+  grid-template-columns: 250px auto;
+  align-items: center;
+  margin: 10%;
+  text-align: left;
+}
+
+.profile-picture {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.profile-input {
+  display: block;
+  width: 300px;
+  margin: 20px 0;
+}

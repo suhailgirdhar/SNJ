@@ -1,0 +1,44 @@
+<%- include("header") %>
+
+<!------------- PRODUCTS SECTION --------------->
+<div class="productsSection" id="productsSection">
+  <h2>Shop By Category</h2>
+  <p class="spaced-p">Explore all of our Re-usable and Sustainable cleaning products</p>
+  <form class="form-control" action="/" method="post">
+    <div class="row">
+      <div class="card zoomParent">
+        <div class="card zoomChild" style="margin: 0">
+          <img class="card-img-top" height="280px" src="/IMAGES/LiquidSoap.jpg" alt="">
+          <div class="card-body">
+            <h5>Liquid Soap</h5>
+            <p>Keep your hands germ-free</p>
+            <button class="btn btn-basic" type="submit" name="button" value="LiquidSoap">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="card zoomParent">
+        <div class="card zoomChild" style="margin: 0">
+          <img class="card-img-top" height="280px" src="/IMAGES/LiquidDetergent.jpg" alt="">
+          <div class="card-body">
+            <h5>Liquid Detergent</h5>
+            <p>Washing liquid for happy machines</p>
+            <button class="btn btn-basic" type="submit" name="button" value="LiquidDetergent">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="card zoomParent">
+        <div class="card zoomChild" style="margin: 0">
+          <img class="card-img-top" height="280px" src="/IMAGES/ToiletCleaner.jpg" alt="">
+          <div class="card-body">
+            <h5>Toilet Cleaner</h5>
+            <p>Stronger than ever before</p>
+            <button class="btn btn-basic" type="submit" name="button" value="ToiletCleaner">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<%- include("footer") %>
